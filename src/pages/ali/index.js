@@ -52,9 +52,9 @@ class Ali extends Component {
 
     return (
       <div className="App">
-        <A message={message}/>
-        <B resultCount={count - 1} handleClick={this.handleClick.bind(this)}/>
-        <B resultCount={count + 1} handleClick={this.handleClick.bind(this)}/>
+        <A message={message} />
+        <B resultCount={count - 1} handleClick={this.handleClick.bind(this)} />
+        <B resultCount={count + 1} handleClick={this.handleClick.bind(this)} />
       </div>
     );
   }
