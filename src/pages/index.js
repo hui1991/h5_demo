@@ -1,8 +1,8 @@
 import React from 'react';
-import ArrayDemo from '@/pages/arrayDemo';
+import Es6Demo from '@/pages/es6Demo';
 
 export default function() {
   return (
-    <ArrayDemo/>
+    <Es6Demo/>
   );
 }
