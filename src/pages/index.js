@@ -1,8 +1,8 @@
 import React from 'react';
-import Mobile from '@/pages/mobileDemo';
+import Question from '@/pages/question';
 
 export default function() {
   return (
-    <Mobile/>
+    <Question/>
   );
 }

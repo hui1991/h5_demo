@@ -20,7 +20,7 @@ import { connect, useSelector } from 'react-redux';
  *
  * 三大原则
  * 1 单一数据源
- * 整个应用的state被存在一课object tree中 而这个object tree被存在唯一的store中
+ * 整个应用的state被存在一棵object tree中 而这个object tree被存在唯一的store中
  * 2 state是只读的
  * 唯一改变state的方式就是触发action，action是一个描述已发生事件的普通对象
  * 3 使用纯函数来执行修改
