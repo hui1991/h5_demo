@@ -8,6 +8,10 @@ class Question extends Component {
     // console.log(this.props.children);
   }
 
+  componentWillReceiveProps(nextProps,nextContent){
+
+  }
+
   render() {
     test();
     return (
@@ -35,8 +39,8 @@ const test = () => {
   const jsonObject = JSON.parse(jsonString);
 
   obj.book.name = 'javaScript';
-  console.log(jsonObject);
-  console.log(obj);
+  console.log('深拷贝 JSON:',jsonObject);
+  console.log('深拷贝:',obj);
 
   // lodash   cloneDeep
   const lodashObj = _.cloneDeep(obj);
@@ -69,7 +73,7 @@ const test = () => {
   // constructor  componentWillMount  render  componentDidMount  componentWillUnMount
   // componentWillUpdate render componentDidUpdate
   // shouldComponentUpdate  ( return boolean )
-  // componentWillReceiveProps
+
 
 
   // 3 数组去重
@@ -192,7 +196,7 @@ const test = () => {
   // 3 absolute 脱离文档流
 
   // 11 promise
-  // 1 什么事promise
+  // 1 什么是promise
   // promise是异步编程的解决方案 里面包含未来才会结束的某个事件（异步操作）的结果 可以将异步操作以同步操作的流程表达出来
   // 2 promise的三种状态
   // pending-进行中  fulfilled-已成功  rejected-已失败   一旦状态改变就不会再变
@@ -353,6 +357,8 @@ const test = () => {
   // 获取表单数据 validateFields
 
   // 22 作用域
+  // 变量（基本数据类型和引用数据类型）的执行环境
+  // 可以分为全局作用域和函数作用域
   // 作用域是在运行时代码中的某些特定部分中变量，函数和对象的可访问性。换句话说，作用域决定了代码区块中变量和其他资源的可见性
 
   // 23 var const let 区别
@@ -372,6 +378,28 @@ const test = () => {
   // document.querySelector 根据选择器获取元素
   // document.querySelectorAll 根据选择器获取元素
   // document.createElement 创建元素节点
+
+  // 26 受控组件和非受控组件
+  // 受控组件 表单元素通过组件的state来维护自己的state 并根据用户输入调用setState()来进行数据跟新
+  // 非受控组件 表单组件没有value props
+  // 受控组件的优点 实时表单验证 有条件禁用 强制输入格式
+
+  // 27 闭包
+  // 闭包是指有权访问另一个函数作用域中的变量的函数
+  // 创建闭包的方式-在一个函数内部创建另一个函数
+  // 延长函数的作用域链 模拟块级作用域 在对象中创建私有变量
+
+  // 28 原型和原型链
+  // 原型
+  // 原型对象是用来存放特定类型的所有实例共享的属性和方法 每个函数都会有prototype属性（指针）指向原型对象
+  // 默认情况下原型对象会有一个constructor属性 指向该类型的构造函数 我们可以给原型对象添加其他的属性和方法
+  // 实例对象通过_proto_指向构造函数的原型对象  而不是指向构造函数
+  // 原型链
+  // 将一个类型的实例赋值给另一个构造函数的原型来实现
+
+  // 29 继承
+  // 组合式继承 使用原型链继承共享的属性和方法 使用借用构造函数继承实例的属性
+
 
 };
 
