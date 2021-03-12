@@ -401,6 +401,7 @@ const test = () => {
   // 组合式继承 使用原型链继承共享的属性和方法 使用借用构造函数继承实例的属性
 
 
+
 };
 
 export default Question;
